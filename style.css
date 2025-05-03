@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container{
+    border: 10px solid #8b4600;
+    display: grid;
+    grid-template-areas: 
+        "Green Green Green Green Green Green b1 b2 b3 Blue Blue Blue Blue Blue Blue"
+        "Green Green Green Green Green Green b4 b5 b6 Blue Blue Blue Blue Blue Blue"
+        "Green Green Green Green Green Green b7 b8 b9 Blue Blue Blue Blue Blue Blue"
+        "Green Green Green Green Green Green b10 b11 b12 Blue Blue Blue Blue Blue Blue"
+        "Green Green Green Green Green Green b13 b14 b15 Blue Blue Blue Blue Blue Blue"
+        "Green Green Green Green Green Green b16 b17 b18 Blue Blue Blue Blue Blue Blue"
+        "g1 g2 g3 g4 g5 g6 mix mix mix r1 r2 r3 r4 r5 r6"
+        "g7 g8 g9 g10 g11 g12 mix mix mix r7 r8 r9 r10 r11 r12"
+        "g13 g14 g15 g16 g17 g18 mix mix mix r13 r14 r15 r16 r17 r18"
+        "Yellow Yellow Yellow Yellow Yellow Yellow y1 y2 y3 Red Red Red Red Red Red"
+        "Yellow Yellow Yellow Yellow Yellow Yellow y4 y5 y6 Red Red Red Red Red Red"
+        "Yellow Yellow Yellow Yellow Yellow Yellow y7 y8 y9 Red Red Red Red Red Red"
+        "Yellow Yellow Yellow Yellow Yellow Yellow y10 y11 y12 Red Red Red Red Red Red"
+        "Yellow Yellow Yellow Yellow Yellow Yellow y13 y14 y15 Red Red Red Red Red Red"
+        "Yellow Yellow Yellow Yellow Yellow Yellow y16 y17 y18 Red Red Red Red Red Red";
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid #000;
+}
+.bigbox,.mix{
+    font-size: 50px;
+}
+.boxofblue{
+    background-color: #2196F3;
+    height: 50px;
+}
+.xblue{
+    background-color: #007de3;
+}
+.boxofgreen{
+    background-color: #4CAF50;
+    height: 50px;
+}
+.xgreen{
+    background-color: #3c8f3f;
+}
+.boxofred{
+    background-color: #ff4039d8;
+    height: 50px;
+}
+.xred{
+    background-color: #d42f2ad8;
+}
+.boxofyellow{
+    background-color: #ffeb3b;
+    height: 50px;
+}
+.xyellow{
+    background-color: #e8d103;
+}
+.mix{
+    border: 10px solid #000;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mix-inside{
+    border-top:40px solid #007de3;
+    border-bottom: 40px solid #e8d103 ;
+    border-right: 40px solid #d42f2ad8;
+    border-left: 40px solid #3c8f3f;
+    /* background-image: linear-gradient(white, white), conic-gradient(#007de3 0deg,#007de3 45deg,#d42f2ad8 45deg, #d42f2ad8 135deg, #e8d103 135deg, #e8d103 225deg, #3c8f3f 225deg, #3c8f3f 315deg, #007de3 270deg); */
+    /* background-image: conic-gradient(at 50% 50%, #007de3 ,#d42f2ad8, #e8d103,#3c8f3f); */
+    /* background-image: conic-gradient(#007de3 0deg,#007de3 45deg,#d42f2ad8 45deg, #d42f2ad8 135deg, #e8d103 135deg, #e8d103 225deg, #3c8f3f 225deg, #3c8f3f 315deg, #007de3 270deg); */
+}
+#box1{
+    grid-area: Green;
+    background-color: #4CAF50;
+}
+#box2{
+    grid-area: Blue;
+    background-color: #2196F3;
+}
+
+#box3{grid-area: b1;}
+#box4{grid-area: b2;}
+#box5{grid-area: b3;}
+#box6{grid-area: b4;}
+#box7{grid-area: b5;}
+#box8{grid-area: b6;}
+#box9{grid-area: b7;}
+#box10{grid-area: b8;}
+#box11{grid-area: b9;}
+#box12{grid-area: b10;}
+#box13{grid-area: b11;}
+#box14{grid-area: b12;}
+#box15{grid-area: b13;}
+#box16{grid-area: b14;}
+#box17{grid-area: b15;}
+#box18{grid-area: b16;}
+#box19{grid-area: b17;}
+#box20{grid-area: b18;}
+#box21{grid-area: g1;}
+#box22{grid-area: g2;}
+#box23{grid-area: g3;}
+#box24{grid-area: g4;}
+#box25{grid-area: g5;}
+#box26{grid-area: g6;}
+#box27{grid-area: g7;}
+#box28{grid-area: g8;}
+#box29{grid-area: g9;}
+#box30{grid-area: g10;}
+#box31{grid-area: g11;}
+#box32{grid-area: g12;}
+#box33{grid-area: g13;}
+#box34{grid-area: g14;}
+#box35{grid-area: g15;}
+#box36{grid-area: g16;}
+#box37{grid-area: g17;}
+#box38{grid-area: g18;}
+#box39{grid-area: mix;}
+#box40{grid-area: r1;}
+#box41{grid-area: r2;}
+#box42{grid-area: r3;}
+#box43{grid-area: r4;}
+#box44{grid-area: r5;}
+#box45{grid-area: r6;}
+#box46{grid-area: r7;}
+#box47{grid-area: r8;}
+#box48{grid-area: r9;}
+#box49{grid-area: r10;}
+#box50{grid-area: r11;}
+#box51{grid-area: r12;}
+#box52{grid-area: r13;}
+#box53{grid-area: r14;}
+#box54{grid-area: r15;}
+#box55{grid-area: r16;}
+#box56{grid-area: r17;}
+#box57{grid-area: r18;}
+#box58{grid-area: y1;}
+#box59{grid-area: y2;}
+#box60{grid-area: y3;}
+#box61{grid-area: y4;}
+#box62{grid-area: y5;}
+#box63{grid-area: y6;}
+#box64{grid-area: y7;}
+#box65{grid-area: y8;}
+#box66{grid-area: y9;}
+#box67{grid-area: y10;}
+#box68{grid-area: y11;}
+#box69{grid-area: y12;}
+#box70{grid-area: y13;}
+#box71{grid-area: y14;}
+#box72{grid-area: y15;}
+#box73{grid-area: y16;}
+#box74{grid-area: y17;}
+#box75{grid-area: y18;}
+#box76{
+    grid-area: Yellow;
+    background-color: #ffeb3b;
+}
+#box77{
+    grid-area: Red;
+    background-color: #ff4039d8;
+}
+
