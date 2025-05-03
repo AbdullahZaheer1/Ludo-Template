@@ -68,11 +68,6 @@ body{
     background-color: #e8d103;
 }
 .mix{
-    border: 10px solid #000;
-    padding: 0;
-    box-sizing: border-box;
-}
-.mix-inside{
     border-top:40px solid #007de3;
     border-bottom: 40px solid #e8d103 ;
     border-right: 40px solid #d42f2ad8;
